@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* todas as demais midias*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body, html{
+    width: 100vw;
+    height: 100vh;
+}
+.dark-mode body{
+    background-color: black;
+    color: white;
+}
+header{
+    background-color: rgb(89, 0, 255) !important;
+    height: 90px;
+}
+header h1{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+header li{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+header li a{
+    text-decoration: none;
+    color: white;
+}
+header li:hover{
+    background-color: rgba(0, 0, 0, 0.26);
+    transition-duration: 0.4s;
+}
+header nav{
+    margin-top: 15px;
+    text-align: center;
+}
+main{
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.342);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+}
+main h1, h2, h3{
+    color: rgb(89, 0, 255);
+}
+#sobreMim{
+    width: 100%;
+    padding: 20px;
+}
+#sobreMim h1{
+    padding-bottom: 15px;
+    
+}
+#sobreMim p{
+    font-size: 20px;
+    text-indent: 1.5em;
+}
+#ifrs{
+    color: black;
+}
+#ifrs:hover{
+    text-decoration: none;
+}
+picture{
+    width: 100%;
+    padding: 20px;
+}
+#ramiropc, #ramirocell {
+    max-width: 100%;
+    max-height: 100%;
+}
+#projetos{
+    margin-left: 40px;
+    line-height: 20px;
+}
+#projetos h2{
+    margin-top: 20px;
+    font-size: 24px;
+}
+#projetos ul{
+    margin-top: 10px;
+    font-size: 18px;
+}
+#projetos li a{
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+#projetos li:hover{
+    text-decoration: underline;
+    transition-duration: 0.4s;
+}
+.skills{
+    height: 50px;
+    width: 50px;
+    margin-left: 20px;
+}
+#imghtml{
+    height: 67px;
+    width: 67px;
+}
+#skills{
+    margin-left: 40px;
+    line-height: 20px;
+}
+#skills h2{
+    margin-top: 40px;
+    font-size: 24px;
+}
+#skills p{
+    margin-top: 10px;
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+#contato{
+    margin-left: 40px;
+    line-height: 20px;
+}
+#contato h2{
+    margin-top: 40px;
+    font-size: 24px;
+}
+#contato p{
+    margin-top: 10px;
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 100px;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+
+@media screen and (min-width: 800px){
+    main {
+        
+        min-width: 900px;
+    }
+    #comecosite{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #sobreMim {
+        flex: 1;
+        padding: 20px;
+    }
+    #sobreMim p{
+        text-align: justify;
+    }
+
+    picture {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; 
+    }
+
+    #ramiropc, #ramirocell {
+        max-width: 100%; 
+        max-height: 100%;
+    } 
+    #ramiropc{
+        height: 350px;
+        width: 350px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="media-query.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Ramiro Severgnini</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre Mim</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <button id="modo-noturno-botao">Modo Noturno</button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="comecosite">
+            <div id="sobreMim">
+                <h1>Sobre mim</h1>
+                <p>Sou Ramiro Severgnini, um estudante de 16 anos do <a id="ifrs" href="https://ifrs.edu.br"target="_blank">Instituto Federal</a> do Rio Grande do Sul, cursando técnico em informática, apaixonado por tecnologia e inovação. Atualmente, faço estágio na Severgnini Soluções, onde aprendo muito sobre programação cada dia. Gosto muito de mexer com finanças também! Sempre estarei determinado a crescer profissionalmente e contribuir para um futuro mais promissor.</p>
+            </div>
+            <picture>
+                <source id="ramirocell" media="(max-width:800px)" srcset="imagens/ramirocell.png">
+                <img id="ramiropc" src="imagens/ramiroformal.png" alt="Ramiro">
+            </picture>
+        </div>
+        <div id="projetos">
+            <h2>Projetos</h2>
+            <ul>
+                <li><a href="https://github.com/ramirosevergnini/Projeto-Advogado"target="_blank">Site de Advocacia</a></li>
+                <li><a href="https://github.com/ramirosevergnini/projeto-login"target="_blank">Tela de Login</a></li>
+                <li><a href="https://github.com/ramirosevergnini/projeto-redesocial" target="_blank">Rede social</a></li>
+            </ul>
+        </div>
+        <div id="skills">
+            <h2>Skills</h2>
+            <p>Passe o mouse por cima das imagens</p>
+            <img id="imghtml" src="imagens/html.png" alt="html" title="Conhecimento intermediário em HTML">
+            <img class="skills" src="imagens/css.png" alt="css" title="Conhecimento intermediário em CSS">
+            <img class="skills" src="imagens/js.png" alt="javascript" title="Conhecimento intermediário em JavaScript">
+            <img class="skills" src="imagens/python.png" alt="python" title="Conhecimento intermediário em Python">
+            <img class="skills" src="imagens/java.png" alt="java" title="Conhecimento básico em Java">
+        </div>
+        <div id="contato">
+            <h2>Contatos</h2>
+            <p>Gostou de algum projeto? eu adoraria ouvir sobre!</p>
+            <a href="https://www.instagram.com/ramirosvz/" target="_blank"><img class="skills" src="imagens/instagram.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/ramiro-severgnini-956730302/"target="_blank"><img class="skills" src="imagens/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/ramirosevergnini"target="_blank"><img class="skills" src="imagens/github.png" alt="github"></a>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Ramiro - Brasil</p>
+    </footer>
+</body>
+</html>
