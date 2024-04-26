@@ -1,5 +1,23 @@
 @charset "UTF-8";
 /* todas as demais midias*/
+:root {
+    --cor-fundo-header: rgb(0, 0, 190);
+    --cor-titulo-header: white;
+    --cor-fundo: #ffffff; /* cor de fundo padrão */
+    --cor-texto: #000000; /* cor de texto padrão */
+    --cor-titulo: rgb(0, 0, 190);
+    --cor-subtitulos: rgb(92, 91, 91);
+  }
+
+.dark-mode:root {
+    --cor-fundo-header: rgb(20, 20, 20);    
+    --cor-titulo-header: rgb(255, 255, 255);
+    --cor-fundo: #0f0f0f; /* cor de fundo no modo escuro */
+    --cor-texto: #ffffff; /* cor de texto no modo escuro */
+    --cor-titulo: rgb(99, 99, 214);
+    --cor-subtitulos: rgb(92, 91, 91);
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -9,57 +27,31 @@ body, html{
     width: 98vw;
     height: 100%;    
 }
-#mudaparacelular{
-    visibility: hidden;
-}
-.dark-mode header {
-    background-color: #0f0f0f;
-}
-.dark-mode main{
-    background-color: rgb(27, 27, 27);
-    color: white;
-}
-.dark-mode main h1, h2, h3{
-    color: rgb(162, 124, 231);
-}
-.dark-mode #projetos h2{
-    color: rgb(162, 124, 231);
-}
-.dark-mode #skills h2{
-    color: rgb(162, 124, 231);
-}
-.dark-mode #contato h2{
-    color: rgb(162, 124, 231);
-}
-.dark-mode #projetos li a{
-    color: rgb(255, 255, 255);
-}
-.dark-mode #ifrs{
-    color: rgb(255, 255, 255);
-}
+
 header{
-    background-color: rgb(89, 0, 255);
+    background-color: var(--cor-fundo-header);
     height: 90px;
 }
 header h1{
     padding-top: 15px;
     text-align: center;
     font-size: 28px;
-    color: white;
+    color: var(--cor-titulo-header);
 }
 header li{
     display: inline-block;
     padding-right: 20px;
     padding-left: 20px;
     font-size: 18px;
+    
 }
 header li a{
     text-decoration: none;
-    color: white;
-}
-header li:hover{
-    background-color: rgba(0, 0, 0, 0.26);
-    transition-duration: 0.4s;
+    color: var(--cor-titulo-header);
+    &:hover{
+        background-color: rgba(0, 0, 0, 0.288);
+        transition-duration: 0.4s;
+    }
 }
 header nav{
     margin-top: 15px;
@@ -73,9 +65,11 @@ main{
     align-items: center;
     margin-bottom: 80px;
     padding-bottom: 40px;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 main h1, h2, h3{
-    color: rgb(89, 0, 255);
+    color: var(--cor-titulo);
 }
 #sobreMim{
     width: 100%;
@@ -90,7 +84,7 @@ main h1, h2, h3{
     text-indent: 1.5em;
 }
 #ifrs{
-    color: black;
+    color: var(--cor-texto);
 }
 #ifrs:hover{
     text-decoration: none;
@@ -118,7 +112,7 @@ picture{
 #projetos li a{
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+    color: var(--cor-texto);
 }
 #projetos li:hover{
     text-decoration: underline;
@@ -143,7 +137,7 @@ picture{
 }
 #skills p{
     margin-top: 10px;
-    color: gray;
+    color: var(--cor-subtitulos);
     margin-bottom: 10px;
     font-size: 15px;
 }
@@ -157,7 +151,7 @@ picture{
 }
 #contato p{
     margin-top: 10px;
-    color: gray;
+    color: var(--cor-subtitulos);
     margin-bottom: 10px;
     font-size: 15px;
 }
