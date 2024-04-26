@@ -6,20 +6,23 @@
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="media-query.css">
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body id="bodycolor">
     <header>
         <h1>Ramiro Severgnini</h1>
         <nav>
             <ul>
-                <li><a href="#sobreMim">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <button id="modo-noturno-botao">Modo Noturno</button>
+                <div id="menu">
+                    <li><a href="#sobreMim">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <button onclick="darkMode()" id="modo-noturno-botao">Modo Noturno</button>
+                </div>
+                <span id="menuHamburguer" class="material-symbols-outlined">menu</span>
             </ul>
+            
         </nav>
     </header>
     <main>
@@ -43,7 +46,7 @@
         </div>
         <div id="skills">
             <h2>Skills</h2>
-            <p>Passe o mouse por cima das imagens</p>
+            <p id="mudaparacelular">Passe o mouse por cima das imagens</p>
             <img id="imghtml" src="imagens/html.png" alt="html" title="Conhecimento intermediário em HTML">
             <img class="skills" src="imagens/css.png" alt="css" title="Conhecimento intermediário em CSS">
             <img class="skills" src="imagens/js.png" alt="javascript" title="Conhecimento intermediário em JavaScript">
@@ -61,5 +64,6 @@
     <footer>
         <p>Desenvolvido por Ramiro - Brasil</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

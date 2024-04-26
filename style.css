@@ -6,15 +6,39 @@
     box-sizing: border-box;
 }
 body, html{
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 100%;    
 }
-.dark-mode body{
-    background-color: black;
+#mudaparacelular{
+    visibility: hidden;
+}
+.dark-mode header {
+    background-color: #0f0f0f;
+}
+.dark-mode main{
+    background-color: rgb(27, 27, 27);
     color: white;
 }
+.dark-mode main h1, h2, h3{
+    color: rgb(162, 124, 231);
+}
+.dark-mode #projetos h2{
+    color: rgb(162, 124, 231);
+}
+.dark-mode #skills h2{
+    color: rgb(162, 124, 231);
+}
+.dark-mode #contato h2{
+    color: rgb(162, 124, 231);
+}
+.dark-mode #projetos li a{
+    color: rgb(255, 255, 255);
+}
+.dark-mode #ifrs{
+    color: rgb(255, 255, 255);
+}
 header{
-    background-color: rgb(89, 0, 255) !important;
+    background-color: rgb(89, 0, 255);
     height: 90px;
 }
 header h1{
@@ -144,4 +168,10 @@ footer{
     font-size: 20px;
     text-align: center;
     line-height: 100px;
+}
+#menu{
+    visibility: hidden;
+}
+#menuHamburguer{
+    visibility: visible;
 }
