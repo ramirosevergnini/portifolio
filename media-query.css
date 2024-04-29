@@ -1,11 +1,7 @@
-@charset "UTF-8";
-@media screen and (min-width: 800px){
-    main {
-        min-width: 900px;
-    }
-    header{
-        height: 90px;
-    }
+@charset "UTF-8";   
+@media screen and (min-width: 800px) {
+    
+
     #comecosite{
         display: flex;
         flex-direction: row;
@@ -36,10 +32,5 @@
     #mudaparacelular{
         visibility: visible;
     }
-    #menu{
-        visibility: visible;
-    }
-    #menuHamburguer{
-        visibility: hidden;
-    }
+    
 }

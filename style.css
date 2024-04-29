@@ -10,14 +10,56 @@
   }
 
 .dark-mode:root {
-    --cor-fundo-header: rgb(20, 20, 20);    
+    --cor-fundo-header: rgb(12, 12, 12);    
     --cor-titulo-header: rgb(255, 255, 255);
-    --cor-fundo: #0f0f0f; /* cor de fundo no modo escuro */
+    --cor-fundo: #1b1b1b; /* cor de fundo no modo escuro */
     --cor-texto: #ffffff; /* cor de texto no modo escuro */
     --cor-titulo: rgb(99, 99, 214);
     --cor-subtitulos: rgb(92, 91, 91);
 }
-
+header h1{
+    text-align: center;
+    padding: 15px;
+    color: var(--cor-titulo-header);
+}
+#burguer{
+    background-color: blue;
+    color: white;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+#burguer:hover{
+    background-color: white;
+    color: blue;
+    transition: 0.3s;
+}
+menu{
+    display: none;
+}
+menu > ul{
+    list-style-type: none;
+}
+menu>ul>li>a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--cor-fundo-header);
+    color: var(--cor-titulo-header);
+    border-top: 2px solid black;
+}
+menu>ul>li>a:hover{
+    background-color: rgb(179, 179, 230);
+    transition: 0.3s;
+}
+ul li{
+    display: block;
+}
+label{
+    color: var(--cor-titulo-header);
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -25,37 +67,13 @@
 }
 body, html{
     width: 98vw;
+    height: 100px;
     height: 100%;    
 }
 
 header{
     background-color: var(--cor-fundo-header);
     height: 90px;
-}
-header h1{
-    padding-top: 15px;
-    text-align: center;
-    font-size: 28px;
-    color: var(--cor-titulo-header);
-}
-header li{
-    display: inline-block;
-    padding-right: 20px;
-    padding-left: 20px;
-    font-size: 18px;
-    
-}
-header li a{
-    text-decoration: none;
-    color: var(--cor-titulo-header);
-    &:hover{
-        background-color: rgba(0, 0, 0, 0.288);
-        transition-duration: 0.4s;
-    }
-}
-header nav{
-    margin-top: 15px;
-    text-align: center;
 }
 main{
     max-width: 700px;
@@ -163,9 +181,4 @@ footer{
     text-align: center;
     line-height: 100px;
 }
-#menu{
-    visibility: hidden;
-}
-#menuHamburguer{
-    visibility: visible;
-}
+
